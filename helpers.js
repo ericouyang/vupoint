@@ -38,7 +38,7 @@ compare2 = function(prop1, prop2){
 			if(entity.text.toLowerCase()==combinedInput2[i].name){
 				add = false;
 			}
-		}
+		});
         	
         	if(add){
             	combinedInput2.push({'name':keyword.text.toLowerCase(),'score':parseFloat(keyword.sentiment.score)});
