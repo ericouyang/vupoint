@@ -61,12 +61,22 @@
       </div>
     </div>
     <hr>
-    {{#each proposals}}
     <div class="row">
-      <div class="col-lg-12">
-        <p>{{text}}</p>
-      </div>
-    </div> 
-    {{/each}}   
+      {{#each proposals}}
+        <div class="col-md-3">
+          <div class="thumbnail vupoint-thumbnail" data-proposal-id="{{_id}}">
+            <a class="pull-right close" data-toggle="tooltip" title="Delete">&times;</a>
+            <h4><a href="/proposal/{{_id}}">{{name}}</a></h4>
+            <p class="summary">{{summary}}</p>
+            <p>
+              <b>Keywords: <b>
+              {{# each keywords}}
+                <span class="label label-primary">{{text}}</span>
+              {{/each}}
+            </p>
+          </div>
+        </div>
+      {{/each}} 
+    </div>  
   </div>
 </template>

@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
 preserve-inputs
 
@@ -19,3 +18,7 @@ router
 page-js-ie-support
 HTML5-History-API
 less
+
+npm
+autopublish
+http
