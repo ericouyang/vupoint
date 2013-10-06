@@ -6,7 +6,7 @@ if (Meteor.isClient) {
         summary: $('#proposal-summary').val(),
         text: $('#proposal-text').val(),
       });
-      Meteor.call('runNLP', id, $('#proposal-text').val());
+      Meteor.call('runNLP', id, Session.get('projectId'), $('#proposal-text').val());
       Meteor.Router.to('/project/'+ Session.get('projectId'));
     }
   });

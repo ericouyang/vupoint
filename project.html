@@ -61,13 +61,14 @@
       </div>
     </div>
     <hr>
+    <div class="row" id="loadhere">
+    </div>
     <div class="row">
       {{#each proposals}}
         <div class="col-md-3">
           <div class="thumbnail vupoint-thumbnail" data-proposal-id="{{_id}}">
             <a class="pull-right close" data-toggle="tooltip" title="Delete">&times;</a>
-            <h4><a href="/proposal/{{_id}}">{{name}}</a></h4>
-            <p class="summary">{{summary}}</p>
+            <p class="summary">{{summary}} <br/> <a href="/proposal/{{_id}}">Read this &raquo;</a></p>
             <p>
               <b>Keywords: <b>
               {{# each keywords}}
@@ -79,4 +80,10 @@
       {{/each}} 
     </div>  
   </div>
+  <script>
+    $(document).ready(function(){
+        var proposals = Proposals.find({'_id': project._id});
+        loadProjectCloud(generate_json_cloud_data(proposals));
+    });
+  </script>
 </template>

@@ -15,7 +15,7 @@
             <div class="form-group">
               <label for="proposal-summary" class="col-md-2 control-label">Summary</label>
               <div class="col-md-8">
-                <textarea class="form-control" rows="8" id="proposal-summary"></textarea>
+                <textarea class="form-control" rows="3" id="proposal-summary"></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -23,12 +23,6 @@
               <div class="col-md-8">
                 <textarea class="form-control" rows="8" id="proposal-text"></textarea>
               </div>
-            </div>
-            <legend class="col-md-offset-1">Details</legend>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-5">
-                 <a href="#" class="btn btn-success"><i class="icon-plus"></i> Add new item</a>
-                </div>
             </div>
             <div class="form-group">
               <div class="col-md-offset-2 col-md-5">
@@ -54,13 +48,18 @@
     <div class="row">
       <div class="col-lg-12">
         <p>
-          <b>Keywords: <b>
-          {{# each project.keywords}}
-            <span class="label label-primary">{{this}}</span>
+          <b>Keywords: </b>
+          {{# each proposal.keywords}}
+            <span class="label label-primary">{{this.text}}</span>
           {{/each}}
         </p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p><b>Summary: </b>{{proposal.summary}}</p>
+      </div>
+    </div> 
     <div class="row">
       <div class="col-lg-12">
         <p>{{proposal.text}}</p>
