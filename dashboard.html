@@ -1,0 +1,24 @@
+<template name="dashboard">
+  <div class="content container">
+    <div class="row">
+      <div class="col-lg-12">
+        <a class="btn btn-primary pull-right" href="/project/new">Start a new project</a>
+        <div class="page-header">
+          <h2>Welcome back!</h2>
+        </div>
+      </div>
+    </div>
+    <h3>Your projects</h3>
+    <div class="row">
+      {{#each projects}}
+        <div class="col-md-3">
+          <div class="thumbnail vupoint-project-thumbnail">
+            <h4>{{name}}</h4>
+            <p>{{description}}</p>
+            <p><a href="/project/{{_id}}/proposal/new" class="btn btn-primary">Submit proposal</a></p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
