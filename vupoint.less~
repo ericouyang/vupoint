@@ -20,7 +20,3 @@ body .jumbotron h1 {
 form legend {
   border: none;
 }
-
-.navbar-brand {
-  padding: 0;
-}
