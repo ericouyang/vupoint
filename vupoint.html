@@ -28,17 +28,13 @@
         <a class="navbar-brand" href="/">vupoint [alpha]</a>
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
             <li><a href="/dashboard">My Dashboard</a></li>
           {{/if}}
           {{loginButtons}}
         </ul>
-      </div><!--/.navbar-collapse -->
+      </div>
     </div>
   </div>
 </template>
