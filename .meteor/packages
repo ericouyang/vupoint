@@ -9,3 +9,12 @@ insecure
 preserve-inputs
 
 bootstrap-3
+accounts-ui-bootstrap-3
+accounts-password
+
+holder
+
+font-awesome
+router
+page-js-ie-support
+HTML5-History-API

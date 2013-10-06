@@ -1,4 +1,12 @@
-body {
-  padding-top: 50px;
+body .jumbotron h1 {
+  padding-top: 40px;
   padding-bottom: 20px;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.vupoint-project-thumbnail {
+  padding: 8px 12px;
 }

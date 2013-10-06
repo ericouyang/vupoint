@@ -2,13 +2,47 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-3": {}
+      "bootstrap-3": {},
+      "accounts-ui-bootstrap-3": {},
+      "holder": {},
+      "font-awesome": {},
+      "router": {}
     },
     "packages": {
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
         "tag": "v0.3.5",
         "commit": "47996f67f3987c9f82117394effcbe1586a4fe29"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.2.3",
+        "commit": "c6aac7a331e457abd457a6f3ed030ac1411b220c"
+      },
+      "holder": {
+        "git": "https://github.com/Dsyko/meteor-holder",
+        "tag": "v0.1.9",
+        "commit": "081a706bc39ed7b5bd8a115c8fc480378e2cb81d"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v3.2.1",
+        "commit": "38bdfff72dfb8857b272f9a9b056045d6a015489"
+      },
+      "router": {
+        "git": "https://github.com/tmeasday/meteor-router.git",
+        "tag": "v0.5.4.1",
+        "commit": "d00e380dda2184b70e909fc4a0fb5358d602c586"
+      },
+      "page-js-ie-support": {
+        "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
+        "tag": "v1.3.5",
+        "commit": "b99ed8380aefd10b2afc8f18d9eed4dd0d8ea9cb"
+      },
+      "HTML5-History-API": {
+        "git": "https://github.com/tmeasday/meteor-HTML5-History-API.git",
+        "tag": "v4.0.0",
+        "commit": "dc4965f1424cfca625ec3fbea17eace03f8e32c5"
       }
     }
   }
