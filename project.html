@@ -43,5 +43,30 @@
 </template>
 
 <template name="project_view">
-
+  <div class="content container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="pull-right">
+          <a class="btn btn-primary" href="/dashboard">&laquo; Go back to dashboard</a>&nbsp;
+          <a href="/project/{{project._id}}/proposal/new" class="btn btn-success">Submit proposal</a>
+        </div>
+        <div class="page-header">
+          <h2>{{project.name}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p><b>Description:</b> {{project.description}}</p>
+      </div>
+    </div>
+    <hr>
+    {{#each proposals}}
+    <div class="row">
+      <div class="col-lg-12">
+        <p>{{text}}</p>
+      </div>
+    </div> 
+    {{/each}}   
+  </div>
 </template>
