@@ -68,13 +68,17 @@
         <div class="col-md-3">
           <div class="thumbnail vupoint-thumbnail" data-proposal-id="{{_id}}">
             <a class="pull-right close" data-toggle="tooltip" title="Delete">&times;</a>
-            <p class="summary">{{summary}} <br/> <a href="/proposal/{{_id}}">Read this &raquo;</a></p>
+            <p class="summary">{{summary}}</p>
+            <p></p>
+            <div class="keywords">
             <p>
-              <b>Keywords: <b>
+              <b>Keywords: </b>
               {{# each keywords}}
                 <span class="label label-primary">{{text}}</span>
               {{/each}}
             </p>
+            </div>
+            <p><a href="/proposal/{{_id}}" class="btn btn-default">Read this &raquo;</a></p>
           </div>
         </div>
       {{/each}} 
